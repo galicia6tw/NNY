@@ -6,6 +6,9 @@
 %> git commit -m "message" file.txt
 3) Push to the website
 %> git push
+4) Pull the website to local (similar to SVN update)
+%> git pull
+
 
 
 
