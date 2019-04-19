@@ -1,0 +1,11 @@
+0) Check status
+%> git status
+1) To add new file
+%> git add file.txt
+2) Commit the file
+%> git commit -m "message" file.txt
+3) Push to the website
+%> git push
+
+
+
