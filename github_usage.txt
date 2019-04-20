@@ -1,3 +1,5 @@
+Basic steps.
+
 0) Check status
 %> git status
 1) To add new file
@@ -9,6 +11,15 @@
 4) Pull the website to local (similar to SVN update)
 %> git pull
 
+
+Scenario 1) Want to check in a new file
+%> git add file.txt
+%> git commit -m "msg" file.txt
+%> git push
+
+scenario 2) Check in the update (i.e. existing file)
+%> git commit -m "msg" file.txt
+%> git push
 
 
 
