@@ -25,3 +25,6 @@ scenario 3) Delete files
 %> git commit -m "remove file.txt"
 %> git push
 #####################################################################
+scenario 4) Commit a folder
+git add foldername
+git commit foldername -m "commit operation"
