@@ -1,3 +1,33 @@
+# 1. install necessary package
+
+$ su (if asking password, use 123456)
+$ yum install perl-YAML
+$ yum install perl-IO-Tee
+
+
+# 2. clone repository
+
+
+
+# 3. go to NNY/hw-nvdlav1
+$ ./tools/bin/tmake -build verif_sim
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===============
+Just some notes
+===============
 # Command to compile RTL (From NVDLA/hw pkg)
 #
 #/home/tools/vcs/mx-2015.09-SP2-9-T0426/bin/vcs -f /home/highwind/nvdla/hw/verif/dut/dut.f  -Xddg=0x1 -o ./simv -cpp /home/utils/gcc-4.7.2/bin/g++  +nospecify +notimingchecks +define+VLIB_NO_UDP +warn=noTFIPC +warn=noTMR -full64 -y /home/highwind/nvdla/hw/verif/synth_tb -y /home/highwind/nvdla/hw/verif/../outdir/nv_full/vmod/vlibs +incdir+/home/highwind/nvdla/hw/verif/synth_tb +incdir+/home/highwind/nvdla/hw/verif/dut +incdir+/home/highwind/nvdla/hw/verif/../outdir/nv_full/vmod/vlibs +incdir+/home/highwind/nvdla/hw/verif/../outdir/nv_full/vmod/include +incdir+/home/highwind/nvdla/hw/verif/../outdir/nv_full/vmod/vlibs +incdir+..  +define+DESIGNWARE_NOEXIST +vcs+lic+wait -sverilog +libext+.v +libext+.sv -timescale=1ns/1ns -debug_all +define+NVTOOLS_SYNC2D_GENERIC_CELL +define+NO_PERFMON_HISTOGRAM +define+PRAND_OFF  +define+NO_DUMPS /home/highwind/nvdla/hw/verif/synth_tb/tb_top.v /home/highwind/nvdla/hw/verif/synth_tb/csb_master.v /home/highwind/nvdla/hw/verif/synth_tb/csb_master_seq.v /home/highwind/nvdla/hw/verif/synth_tb/axi_slave.v /home/highwind/nvdla/hw/verif/synth_tb/id_fifo.v /home/highwind/nvdla/hw/verif/synth_tb/memory.v /home/highwind/nvdla/hw/verif/synth_tb/memresp_fifo.v /home/highwind/nvdla/hw/verif/synth_tb/raddr_fifo.v /home/highwind/nvdla/hw/verif/synth_tb/slave_mem_wrap.v /home/highwind/nvdla/hw/verif/synth_tb/waddr_fifo.v /home/highwind/nvdla/hw/verif/synth_tb/wdata_fifo.v /home/highwind/nvdla/hw/verif/synth_tb/wstrb_fifo.v /home/highwind/nvdla/hw/verif/synth_tb/clk_divider.v /home/highwind/nvdla/hw/verif/synth_tb/slave2mem_rd.v /home/highwind/nvdla/hw/verif/synth_tb/slave2mem_wr.v /home/highwind/nvdla/hw/verif/../outdir/nv_full/vmod/vlibs/NV_DW02_tree.v /home/highwind/nvdla/hw/verif/../outdir/nv_full/vmod/vlibs/NV_DW_lsd.v /home/highwind/nvdla/hw/verif/../outdir/nv_full/vmod/vlibs/NV_DW_minmax.v -l ./simv.compile.log    -Mdir=./simvCsrc ; ./checkcompile.pl ./simv.compile.log ./simv
