@@ -45,21 +45,17 @@
 # ----------------------------------------------------------------------------
 # TOOL LOCATIONS
 
-# export VCS_HOME   := /home/tools/vcs/mx-2015.09-SP2-9-T0426
-  export VCS_HOME   := /home/tool/Synopsys/VCS/2014.03
+  export VCS_HOME   := /home/tools/vcs/mx-2015.09-SP2-9-T0426
 
   VCS_EXECUTABLE    := ./simv
 
-#  export VERDI_HOME := /home/tools/debussy/verdi3_2015.09-SP2-11
-  export VERDI_HOME := /home/tool/Synopsys/Verdi/2015.09
+  export VERDI_HOME := /home/tools/debussy/verdi3_2015.09-SP2-11
 
-#  export NOVAS_HOME := /home/tools/debussy/verdi3_2015.09-SP2-11
-  export NOVAS_HOME := /home/tool/Synopsys/Verdi/2015.09
+  export NOVAS_HOME := /home/tools/debussy/verdi3_2015.09-SP2-11
 
   export LM_LICENSE_FILE := /home/tools/admin/license_files
 
-#  export VCS_CC     := /home/utils/gcc-4.7.2/bin/g++
-  export VCS_CC     := /usr/bin/g++
+  export VCS_CC     := /home/utils/gcc-4.7.2/bin/g++
 
   export SPYGLASS_HOME := /home/tools/spyglass/SpyGlass-5.2.1.2/SPYGLASS_HOME
 
