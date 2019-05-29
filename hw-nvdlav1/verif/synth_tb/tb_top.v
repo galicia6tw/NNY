@@ -691,6 +691,7 @@ $dumpfile("bench_pk_pass.vcd");
 	top.slave_mem_wrap.axi_slave1,
 	top.slave_mem_wrap.dbb_mem,
 	top.slave_mem_wrap.cvsram_mem,
+	top.nvdla_top,
 	top.mem_clk_gen,top.clk, top.msc_clk_ip, top.reset, top.mem_clk_fast, top.mem_clk);
 `endif
 /*

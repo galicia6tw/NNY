@@ -3,7 +3,7 @@
 $ su (if asking password, use 123456)
 $ yum install perl-YAML
 $ yum install perl-IO-Tee
-
+$ exit
 
 # 2. clone repository
 Find a place you want, for example, ~/projects
@@ -15,16 +15,18 @@ Assuming your account name on github is "user" and password is "passwd"
 $ git clone https://user:passwd@github.com/galicia6tw/NNY.git
 
 
-# 3. go to NNY/hw-nvdlav1
+# 3. build and run sanity tests 
+$ cd NNY/hw-nvdlav1
 $ ./tools/bin/tmake -build verif_sim
 
 
+# 4. find and view results
+$ cd hw-nvdlav1/verif/sim
+$ ls sanity0
+input.txn  input.txn.raw  plusargs.txt  simv  simv.daidir  slave_mem.cfg  test.log  ucli.key  vcdplus.vpd 
 
-
-
-
-
-
+The vcdplus.vpd is VCS waveform, use dve to check it:
+$ dve
 
 
 
