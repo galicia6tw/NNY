@@ -6,7 +6,13 @@ $ yum install perl-IO-Tee
 
 
 # 2. clone repository
+Find a place you want, for example, ~/projects
 
+$ cd ~/projects
+
+Assuming your account name on github is "user" and password is "passwd"
+
+$ git clone https://user:passwd@github.com/galicia6tw/NNY.git
 
 
 # 3. go to NNY/hw-nvdlav1
